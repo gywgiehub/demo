@@ -1,4 +1,4 @@
-package com.demo.gyw.java.spring.aop;
+package com.demo.gyw.spring.aop;
 
 import com.google.common.collect.Lists;
 import java.util.List;

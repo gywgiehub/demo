@@ -1,4 +1,4 @@
-package com.demo.gyw.java.spring.isolation;
+package com.demo.gyw.spring.isolation;
 
 import org.springframework.transaction.annotation.*;
 

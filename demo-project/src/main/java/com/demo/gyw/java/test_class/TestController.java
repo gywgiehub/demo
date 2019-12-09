@@ -1,6 +1,5 @@
 package com.demo.gyw.java.test_class;
 
-import com.demo.gyw.java.custom_annotation.LogAnnotation;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,14 +22,7 @@ public class TestController {
     }
 
     @RequestMapping("/")
-    @LogAnnotation//日志注解
     public String welcome() {
         return "欢迎您,Port:" + port;
-    }
-
-    @RequestMapping("/throw")
-    @LogAnnotation//日志注解
-    public void throwWelcome() {
-        throw new ArithmeticException("这是一个异常！");
     }
 }

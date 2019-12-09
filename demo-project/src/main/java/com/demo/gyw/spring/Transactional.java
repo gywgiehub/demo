@@ -1,4 +1,4 @@
-package com.demo.gyw.java.spring;
+package com.demo.gyw.spring;
 
 /**
  * @Author GouYaoWen

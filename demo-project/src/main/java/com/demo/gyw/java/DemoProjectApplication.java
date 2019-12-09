@@ -1,6 +1,6 @@
 package com.demo.gyw.java;
 
-import com.demo.gyw.java.spring.aop.LogAop;
+import com.demo.gyw.spring.aop.LogAop;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;

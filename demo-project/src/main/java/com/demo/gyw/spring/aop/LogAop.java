@@ -1,4 +1,4 @@
-package com.demo.gyw.java.spring.aop;
+package com.demo.gyw.spring.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
