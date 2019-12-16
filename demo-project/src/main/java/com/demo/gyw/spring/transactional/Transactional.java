@@ -1,4 +1,4 @@
-package com.demo.gyw.spring;
+package com.demo.gyw.spring.transactional;
 
 /**
  * @Author GouYaoWen
