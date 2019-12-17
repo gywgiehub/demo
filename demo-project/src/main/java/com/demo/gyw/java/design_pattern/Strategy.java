@@ -10,20 +10,22 @@ public class Strategy {
      * Strategy.strategic()方法接收一个Shape类型的引用作为参数
      * 这个引用可以是任何类型的Shape，如Circle、Square、Triangle
      * 根据所传递参数的不同，strategic方法有不同的行为略
-     * @param S
+     *
+     * 示例：需要画一个图形Shape  可能是正方形Square/圆形Circle/三角形Triangle不同的形状有不同的画法
+     * @param entity
      */
-    public static void strategic(Shape S){    // 接收策略引用的方法，S是策略引用
-        S.outputShape();                    // 方法中固有不变的部分
+    public static void strategic(Shape entity){    // 接收策略引用的方法，S是策略引用
+        entity.outputShape();                    // 方法中固有不变的部分
     }
 
     public static void main(String[] args){
         Shape sh = new Circle();
         sh.outputShape();
-        // 新建Circle()对象作为strategic()方法的参数，这里的circle()对象就是一个策略，这里用到了向上转型
+        // 新建圆圈Circle()对象作为strategic()方法的参数，这里的circle()对象就是一个策略，这里用到了向上转型
         strategic(new Circle());
-        // 策略Square()对象
+        // 策略正方形Square()对象
         strategic(new Square());
-        // 策略Triangle()对象
+        // 策略三角形Triangle()对象
         strategic(new Triangle());
     }
 }

@@ -1,6 +1,10 @@
 package com.demo.gyw.java;
 
-import java.util.Calendar;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @Author GouYaoWen
@@ -18,6 +22,19 @@ public class Test {
                 "😄");
         System.out.println("✔");
         System.out.println("✖");
+
+        List<String> list = Lists.newArrayList("a","b","c","d");
+        List<String> aList = list.stream().map(item -> {
+            if(item == "a"){
+                return item;
+            }
+            return null;
+        }).filter(item->item != null).collect(Collectors.toList());
+        System.out.println("找到需要到值并过滤: "+aList.toString());
+
+        //mapList
+        List<Map<String, Object>> mapList = Lists.newArrayList();
+        mapList.add(Maps.newHashMap());
     }
 }
 
