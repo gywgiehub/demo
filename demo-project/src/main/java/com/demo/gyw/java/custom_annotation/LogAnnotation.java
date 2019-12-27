@@ -14,4 +14,8 @@ import java.lang.annotation.*;
 @Documented //生存JavaDoc时会包含注解
 public @interface LogAnnotation {
     String value() default "";
+
+    String author();
+
+    String desc();
 }

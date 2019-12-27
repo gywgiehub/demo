@@ -1,8 +1,14 @@
 package com.demo.gyw.spring.aop;
 
+import com.demo.gyw.java.custom_annotation.LogAnnotation;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.*;
+import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
+
+import java.lang.reflect.Method;
 
 /**
  * @Author GouYaoWen
@@ -29,8 +35,21 @@ public class LogAop{
     }
 
     @Before(value="point()")
-    public void before(){
+    public void before(JoinPoint point){
         System.out.println("Before begin!");
+        //获取方法
+        Signature signature = point.getSignature();
+        MethodSignature methodSignature = (MethodSignature) signature;
+        Method method = methodSignature.getMethod();
+        //方法
+        boolean isExist = method.isAnnotationPresent(LogAnnotation.class);
+        if (isExist) {
+            LogAnnotation u = method.getAnnotation(LogAnnotation.class);
+            System.out.println("作者:" + u.author());
+            System.out.println("描述:" + u.desc());
+        }else{
+            System.out.println("方法"+method.getName()+"不存在该注解！");
+        }
     }
 
     @AfterThrowing("point()")

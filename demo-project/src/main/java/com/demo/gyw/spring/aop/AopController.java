@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class AopController {
 
     @RequestMapping("/logAnnotation")
-    @LogAnnotation//日志注解
+    @LogAnnotation(author = "gyw",desc = "欢迎")//日志注解
     public String welcome() {
         return "欢迎您使用Aop测试工具!";
     }
 
     @RequestMapping("/throwLogAnnotation")
-    @LogAnnotation//日志注解
+    @LogAnnotation(author = "gyw",desc = "异常欢迎")//日志注解
     public void throwWelcome() {
         throw new ArithmeticException("这是一个异常！");
     }
