@@ -79,6 +79,8 @@ public class LogAop{
 /*顺序
 around begin!
 Before begin!
+作者:gyw
+描述:欢迎
 around commit!
 after commit!
 AfterReturning commit!*/
