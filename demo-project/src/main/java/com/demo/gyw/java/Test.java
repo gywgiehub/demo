@@ -1,13 +1,9 @@
 package com.demo.gyw.java;
 
-import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
-import java.lang.management.ManagementFactory;
-import java.lang.management.ThreadInfo;
-import java.lang.management.ThreadMXBean;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.HashMap;
+import java.util.Vector;
 
 /**
  * @Author GouYaoWen
@@ -16,28 +12,25 @@ import java.util.stream.Collectors;
  */
 public class Test {
     public static void main(String[] args) {
-        Calendar c = Calendar.getInstance();
-        int hour = c.get(Calendar.HOUR_OF_DAY);
-        int minute = c.get(Calendar.MINUTE);
-        System.out.println(hour);
-        System.out.println(minute);
-        System.out.println("测试" +
-                "😄");
-        System.out.println("✔");
-        System.out.println("✖");
+        Vector vector;
+        HashMap<String,String> map = Maps.newHashMap();
+        String name = "";
+        a:
+        for (int i = 0; i < 10; i ++ ) {
+            System.out.println(i);
+            break a;
+        }
 
-        List<String> list = Lists.newArrayList("a","b","c","d");
-        List<String> aList = list.stream().map(item -> {
-            if(item == "a"){
-                return item;
-            }
-            return null;
-        }).filter(item->item != null).collect(Collectors.toList());
-        System.out.println("找到需要到值并过滤: "+aList.toString());
+        name.length();
 
-        //mapList
-        List<Map<String, Object>> mapList = Lists.newArrayList();
-        mapList.add(Maps.newHashMap());
+    }
+
+    public void test() {
+
+    }
+
+    public static String test(int i) {
+        return "";
     }
 }
 

@@ -14,6 +14,10 @@ import java.lang.reflect.Method;
  * @Author GouYaoWen
  * @Description 日志切面
  * @Pointcut 切入点-->那些要使用AOP
+ * 连接点(JoinPoint)： 就是能够作为切点的一个个动作（方法），,即那些方法要用Aop。
+ * 切点(Poincut)：链接点中的一个或多个，切面会在这些点上来做文章（切点就是什么地方）。当然实际上不是所有连接点都当做切点的，即匹配的连接点
+ * 通知(Advice)：通知是在切点上什么时候，做什么。通知有下列几种类型：Before，After，After-returning，After-throwing，Around
+ * 切面(Aspect)：切面包括切点和切面（什么时候，什么地方，做什么）。
  *
  * @Before 前置通知(Before Advice)
  * @AfterReturning 返回之后通知(After Retuning Advice):

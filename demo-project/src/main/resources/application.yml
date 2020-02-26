@@ -8,3 +8,7 @@ server:
 spring:
   application:
     name: service-hi
+  datasource:
+    url: jdbc:mysql://47.108.71.23:13306/ef_content?useUnicode=true&characterEncoding=utf-8&useSSL=false&autoReconnect=true
+    username: root
+    password: EF20181201rc

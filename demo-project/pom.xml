@@ -19,6 +19,12 @@
     <properties>
         <!--demo-project-->
         <guava.version>26.0-jre</guava.version>
+        <redis.version>2.9.1</redis.version>
+        <!--<mysql.version>8.0.14</mysql.version>-->
+        <mysql.version>5.1.8</mysql.version>
+        <javax.persistence.version>2.2</javax.persistence.version>
+        <alibaba.fastjson.version>1.2.62</alibaba.fastjson.version>
+        <dom4j.version>2.1.1</dom4j.version>
     </properties>
     <dependencies>
         <!--父类中有的-->
@@ -50,6 +56,39 @@
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
             <scope>compile</scope>
+        </dependency>
+        <!--redis-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${redis.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--mysql 8-->
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>${javax.persistence.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>${dom4j.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${alibaba.fastjson.version}</version>
         </dependency>
     </dependencies>
 </project>

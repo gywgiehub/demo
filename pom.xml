@@ -26,7 +26,7 @@
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>demo-project</module>
-        <module>service-feign</module>
+        <module>jedisPool-feign</module>
     </modules>
     <!--子module中不需要写《version》-->
     <dependencyManagement>
