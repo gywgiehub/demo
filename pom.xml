@@ -15,6 +15,7 @@
         <springBoot.version>2.1.3.RELEASE</springBoot.version>
         <spring.version>5.2.1.RELEASE</spring.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+        <spring-boot-maven-plugin.version>1.5.4.RELEASE</spring-boot-maven-plugin.version>
     </properties>
     <!--项目名-->
     <groupId>com.yizhiyixing</groupId>
@@ -23,10 +24,10 @@
     <version>1.0-SNAPSHOT</version>
     <!--modules-->
     <modules>
-        <module>eureka-server</module>
-        <module>eureka-client</module>
+        <module>eurake-server</module>
+        <module>eurake-client</module>
         <module>demo-project</module>
-        <module>jedisPool-feign</module>
+        <module>service-feign</module>
     </modules>
     <!--子module中不需要写《version》-->
     <dependencyManagement>
@@ -80,6 +81,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot-maven-plugin.version}</version>
             </plugin>
         </plugins>
     </build>
