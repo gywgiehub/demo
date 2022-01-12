@@ -13,7 +13,7 @@
         <!--集中定义版本依赖-->
         <lombok.version>1.18.10</lombok.version>
         <springBoot.version>2.1.3.RELEASE</springBoot.version>
-        <spring.version>5.2.1.RELEASE</spring.version>
+        <spring.version>5.3.14</spring.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
         <spring-boot-maven-plugin.version>1.5.4.RELEASE</spring-boot-maven-plugin.version>
     </properties>
